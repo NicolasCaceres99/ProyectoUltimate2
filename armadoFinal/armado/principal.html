@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/paginaPrincipal.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="cuerpo text-success bg-black">
+    <!--Navbar-->
+    <header>
+        <div class="Navegacion bg-black">
+          <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+              <a class="Logo" href="/principal.html" target="_blank"
+                ><img
+                  src="https://cdn.icon-icons.com/icons2/2044/PNG/512/netflix_logo_icon_124344.png"
+                  width="150"
+                  height="150"
+                  alt="Logo"
+              /></a>
+              <button
+                class="navbar-toggler bg-success"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="material-symbols-outlined"> key_visualizer </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                  <li><a class="text-white" href="/pages/administracion.html" target="_blank">Administración</a></li>
+                  <li><a class="text-white" href="/pages/contacto.html" target="_blank">Contacto</a></li>
+                  <li><a class="text-white" href="/pages/login.html" target="_blank">Login</a></li>
+                  <li><a class="text-white" href="/pages/registro.html" target="_blank">Registrarse</a></li>
+                  <li><a class="text-white" href="/pages/AcercaNosotros.html" target="_blank">Nosotros</a></li>
+                </ul>
+              </div>
+              <!--Buscador-->
+              <div class="container">
+                <div>
+                  <input type="text" id="buscador" placeholder="buscar" />
+                  <button onclick="buscar()" id="boton">buscar</button>
+                </div>
+                <ul id="resultados"></ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+    <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!--Slider 1-->
+            <div class="carousel-item active d-item">
+                <img src="https://i.pinimg.com/originals/b1/7c/f8/b17cf8cc77d7a6acb45d76bed18a51d0.jpg" class="d-block w-100 d-img" alt="Slider 1">
+                <div class="carousel-caption top-5 mt-4">
+                    <p class="mt-5 fs-3 text-uppercas">
+
+                    </p>
+                    <h1 class="display-i fw-holder text-capitalice"></h1>
+                    <button class="btn bg-black  px-4 py-2 fs-5 mt-5 "><a
+                            href="https://www.youtube.com/watch?v=YMklwbz01Wc" class="text-success">Ver Ahora</a></button>
+                </div>
+            </div>
+            <!--Slider 2-->
+            <div class="carousel-item d-item">
+                <img src="https://9to5toys.com/wp-content/uploads/sites/5/2016/07/harry-potter.jpg" class="d-block w-100 d-img" alt="Slider 2">
+                <div class="carousel-caption top-5 mt-4">
+                    <p class="mt-5 fs-3 text-uppercas">
+
+                    </p>
+                    <h1 class="display-i fw-holder text-capitalice"></h1>
+                    <button class="btn bg-black px-4 py-2 fs-5 mt-5 "><a
+                            href="https://www.youtube.com/watch?v=gMPEbJQun68&ab_channel=UniversalPicturesM%C3%A9xico"
+                            class="text-success">Ver Ahora</a></button>
+                </div>
+            </div>
+            <!--Slider 3-->
+            <div class="carousel-item d-item">
+                <img src="https://wallpapercave.com/wp/wp4285936.jpg" class="d-block w-100 d-img" alt="Slider 3">
+                <div class="carousel-caption top-5 mt-4">
+                    <p class="mt-5 fs-3 text-uppercas">
+
+                    </p>
+                    <h1 class="display-i fw-holder text-capitalice"></h1>
+                    <button class="btn bg-black px-4 py-2 fs-5 mt-5 "><a
+                            href="https://www.youtube.com/watch?v=gMPEbJQun68&ab_channel=UniversalPicturesM%C3%A9xico"
+                            class="text-success">Ver Ahora</a></button>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Card-->
+    <section class="movies container">
+        <h2 class="peliculas"> PELICULAS MAS VISTAS</h2>
+        <hr class="hrmenu">
+        <div class="box-container-1">
+            <div class="box-1">
+                <div class="content">
+                    <a  class="text-decoration-none" href="/pages/card.html" target="_blank"><img  src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZBWKor9M8asQKyWrGHaGF7-n1PjdanOBnn0iA26wlXdQ2DnCEfq6gNujYvGetZ5qv3vc-51hgKPsbqt1Js5c_Xa1MjlL-yewDk.webp?r=d48" alt="">
+                        <h3 class="peliculas">Peliculas hd</h3>
+                        <p class="peliculas">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p></a>
+      
+                </div>
+            </div>
+ 
+            <div class="box-1">
+                <div class="content">
+                    <a  class="text-decoration-none" href="/pages/card.html" target="_blank"><img  src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABUWS05HZJyt8nCMDc1ZMJLB5N9TJYTDAKQyBZRTMAMgQszZdk_r9pcmdUIHBGwkByxLUSb6CMrBbmfwEtYdkeZDGhQPQ6fnGQ28.webp?r=049" alt="">
+                        <h3 class="peliculas">Peliculas hd</h3>
+                        <p class="peliculas">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p></a>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZ5zKpd7zJoQ-NdjqiLVeOToeprpWyPL3J35FBUiWdDbkrPXYcRiI5cR3afJvTL913DspYtue2TNxusfHuGniHdVhskMEoRGgEQ.webp?r=50e" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABUaMxpWnvaGSi7O3x1ToLlUyxZk9e0o0QLicx9X_KrdBQsFLiPHtg6N6hOf-pJp2GcojMp4EiBAQ_6nbsAbFZrQcxLHSyHfz6nY.webp?r=8b8" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABYCktGNLYkcr5tDEACbabPgNdg7tb-d6gyh0oQ9n0gYulWrYWavQzp7PJpgImASu_jeDcLJvES_kEgqrOMR-Xsomb6hFZvHbBH8.webp?r=d17" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABSuhYity0tSW2pVAui-p31GbU8i9gzJKoucK1Z1v-DYw2PNZ3UqBcw_ENykfNw-KIQevqi0ttMyVpBcw3FMcQfW5568aysB53A0.webp?r=1bb" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABU-GCM0OpI39Zvd19vbvA8DvcLBHRpRFqN2UCLOZ-i5GrjVnCHjXXOETyXd4mHvJIHTj7MpTLtLdSGcAXb4xWgnZNLr7LjZHSmY.webp?r=91f" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABWCddyuUVR_1FcDwt1PK-jzYYKajv_8JrSYdqikyGmk6OwamxjDJaD-ej0k8xOok7qOimTDm4kAIWopFHO1QptNPYR73ACMf064.webp?r=094" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABXFoT1OJGISB6TlrFgbQW9tBorep9josKvulFOnPutHSqfUnQt-32WB6BsY0ERVYt67oKU5NltUE9AyvWBR9gmIRGDPax7We92s.webp?r=e84" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABbGMGkO_mNcWSU4cbSa8xpIkIkr6PSucPA_dKRCwFzOzzMhfrKfl5wIQzjRFwxROqYOcx_Z-Wt9uYVh3jzxD9yrZux_OVKN--90.webp?r=924" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABW4NUR9QNZL0uy1uWn-CoKR1gueYh1cwGfnhblQiCxRPyEyhZxseed4UPg_jQG9m3GBH6qqRlWMtUfD69wCcVAU8gnDiZzcZwsU.webp?r=fe9" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABVPWKq4YHy_q5JiDpGgxxo20VjvqlETKOpq4v6N2-zfwxDn1XsNjSmqkze8qpVJRSZC5lxp_MXvvSgBlbKgLyh1jQfufIxBCLYM.webp?r=470" alt="">
+                    <h3 class="peliculas">Peliculas hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="load-more text-success" id="load-more-1">Cargar Mas</div>
+   
+    </section>
+    <section class="movies container">
+        <h2 class="peliculas">SERIES MAS VISTAS</h2>
+        <hr class="hrmenu">
+        <div class="box-container-2">
+            <div class="box-2">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABZvLDlK7oV7gh8r6iTKgtPYuUGVF4tYUmj9ygOtnR7L89vYYUbakeWkCDL4L2onTwDl3eg_bpjwX3xi2a6o0AVHKvrj-B2kHK_E.webp?r=f73" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABQIyNqLmiFj9yLfYC_HWbHfbjoiEiFiXc1PTrDE37wFqP8uBu91VQsT0C2C25vQJd6pa7qItJg3OJD8ox4Tp_rTEJEOiWErIGpw.webp?r=981" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABcwsRQdT63513O_D45L0Bh1Abmfz5Ln2GdHXAO_hdOUAoxXPJrAC3-4XUNk0vZlgoIGxuexYzXLdmwocqTZx8_a3p7kqTVh9IxQ.webp?r=765" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABRSpAJKYEZD_Wn_SK-5bEkDc7BKQEa5tsrlHArG-hDsjWtl_2_k4ZAKtKLBlaW2r4eRECleexW5A_KWia2ABGESsq-8l0l8VgvZmGyCsaOJhTnqzgRk5nzB9llgG8GrNMYVF.jpg?r=bcc" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABa0rs7HP8AJkgBXjcvNgih14tUNLbf5vzX6hZDbBtY_DMi8blbEl60hIYQsNx4XubOQK3yDLH9jNYoJ6_T5hhqougJNIer-6B_U.webp?r=33a" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="https://occ-0-1700-185.1.nflxso.net/dnm/api/v6/rkETp35xJVj-6WaffQsS77awykM/AAAABSoOJKUTrsGO48udR_qJpnUIbsFvAOANIJPUmBxiNHHqU1qcpn1WQvXHVd3zq4u41Qyfa3qWuaF6rRlp2NvG8EcSufY-YsGdMuaOFYMpS7aolF5N135FvRAetYoUNGhgYRfQ.jpg?r=5a3" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="/Media/Imagenes/CardBox/7.jpg" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="content">
+                    <img src="/Media/Imagenes/CardBox/8.jpg" alt="">
+                    <h3 class="peliculas">Series hd</h3>
+                    <p class="peliculas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Footwe/Pie de Pagina-->
+    <footer class=" text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-white">Nosotros</h5>
+                    <hr class="mb-4">
+                    <p>
+                        [Nombre del Servicio] es una plataforma de streaming que ofrece suscripciones para ver series y
+                        películas en dispositivos con conexión a internet. Con diferentes planes, puedes descargar
+                        contenido en iOS, Android o Windows 10 para verlo sin conexión. Si ya eres miembro, visita "Cómo
+                        Usar [Nombre del Servicio]" para obtener más información sobre su funcionamiento. ¡Bienvenido a
+                        [Nombre del Servicio]!
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-white">Subcripcion</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="#" class="text-success text-decoration-none">Tu Cuenta</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="text-success text-decoration-none">Centro de Ayuda</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="text-success text-decoration-none">Preguntas Frecuentes</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="text-success text-decoration-none">Terminos de Uso</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-white">Contacto</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <li class="fas fa-home mt-3"></li> Gral. Paz 576, T4000 San Miguel de Tucumán, Tucumán
+                    </p>
+
+                    <p>
+                        <li class="fas fa-envelope mt-3"></li> Email:nombredelblog@gmail.com
+                    </p>
+
+                    <p>
+                        <li class="fas fa-phone mt-3"></li> Telefono:381466665
+                    </p>
+
+                </div>
+                <hr class="mb-4">
+
+                <div class="text-center mb-2">
+                    <p>
+                        © 2023 Nombre del Blog. Copyringht Todos los derechos reservados.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <ul class="list-unstyled list-inline">
+
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white "><i class="fab fa-facebook"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"><i class="fab fa-google-plus"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="/javascript/PagPrincipal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="/js/paginaPrincipal.js"></script>
+</body>
+</html>

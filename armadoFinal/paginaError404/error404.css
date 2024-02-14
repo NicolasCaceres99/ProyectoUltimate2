@@ -1,0 +1,168 @@
+/* CSS base */
+body {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://images5.alphacoders.com/403/403119.jpg);  
+    color: #00ff00; 
+}
+
+#boton {
+    background-color: #2ECC71;
+    color: #F8F9F9;
+}
+
+#resultados {
+    color: #F8F9F9;
+    list-style-type: none;
+}
+
+.hola {
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    margin-top: 50px;
+}
+
+.mt-5 {
+    margin-top: 5rem; 
+}
+
+.fs-3 {
+    font-size: 1.5rem; 
+}
+
+.btn-primary {
+    background-color: #1DB954;
+    border-color: #1DB954;
+}
+
+.btn-primary:hover {
+    background-color: #168038;
+    border-color: #168038;
+}
+
+/* Nav */
+.navbar {
+    color: white;
+    width: 100%; /* Añadido */
+}
+
+.Logo {
+    margin-right: 10px;
+}
+
+.Navegacion {
+    display: flex;
+    list-style: none;
+}
+
+.Navegacion li {
+    margin: 0 10px;
+}
+
+.Navegacion li a {
+    color: #F8F9F9;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.Navegacion li a:hover {
+    color: #2ECC71;
+}
+
+.Buscador {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.Buscador input {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    height: 100%;
+    color: #2ECC71;
+    background: transparent;
+    border: 1px solid rgba(88, 214, 141);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);
+}
+
+.Buscador input::placeholder {
+    color: #58D68D;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #333;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 100px; 
+    padding-top: 10%; /* Cambiado para dar un espacio superior */
+    padding-bottom: 10%; /* Cambiado para dar un espacio inferior */
+}
+
+p {
+    font-size: 17px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2ECC71 !important;
+}
+
+i {
+    font-size: 25px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.containerC {
+    background-color: #333;
+}
+
+/* Media query para cada tipo de dispositivo */
+/* Dispositivos grandes (mayor a 992px) */
+@media (min-width: 992px) {
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+/* Dispositivos medianos (entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+/* Dispositivos pequeños (menor a 768px) */
+@media (max-width: 767px) {
+    html, body {
+        overflow-x: hidden;
+    }
+}

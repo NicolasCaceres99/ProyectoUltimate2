@@ -1,0 +1,186 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.navbar {
+    max-width: 100%;
+    overflow-x: hidden;
+    a:hover {
+        color: #2ecc71 !important;
+    }
+}
+
+.Navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navegacion li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.Navegacion a {
+    color: #F8F9F9;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.Navegacion a:hover {
+    color: #2ECC71;
+}
+
+.Buscador {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.Buscador input {
+    width: 100%;
+    height: 100%;
+    color: #2ECC71;
+    background: transparent;
+    border: 1px solid rgba(88, 214, 141 );
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);
+}
+
+#boton {
+    background-color: #2ECC71;
+    color: #F8F9F9;
+}
+
+#resultados {
+    color: #F8F9F9;
+    list-style-type: none;
+}
+
+/* Login */
+
+/* Estilo para quitar los puntos de la lista desordenada */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cuerpo {
+    padding: 10%;
+    /* background:url(https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+}
+
+form {
+    max-width: auto;
+    margin-top: auto;
+    /* margin: 0 auto; */
+    padding: 10%;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url(https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2ECC71;
+}
+
+form label {
+    font-weight: bold;
+    color: #2ECC71;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+}
+
+/* Estilos para el área de "Recordar" */
+.Recordar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Recordar p {
+    margin: 0;
+    font-size: 14px;
+    color: #2ECC71;
+}
+
+/* Estilos para el botón de iniciar sesión */
+form [type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ECC71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #58D68D;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5%;
+    a:hover {
+        color: #2ecc71 !important;
+    }
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer .list-inline-item {
+    margin-right: 10px;
+}
+
+footer .list-inline-item:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .Buscador {
+        width: auto;
+    }
+
+    .Buscador input {
+        width: 200px;
+    }
+
+    form {
+        padding: 5%;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+        width: 100%;
+    }
+}
